@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-03T16:33:22Z" name="RegressionAutomatedQA" finished-at="2024-09-03T16:33:36Z" duration-ms="14108">
+    <groups>
+    </groups>
+    <test started-at="2024-09-03T16:33:22Z" name="TC_02" finished-at="2024-09-03T16:33:29Z" duration-ms="7061">
+      <class name="loginTests.TC_02_ValidateLogin">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:loginTests.TC_02_ValidateLogin@46292372]" started-at="2024-09-03T10:33:22Z" name="startWebDriver" finished-at="2024-09-03T10:33:25Z" duration-ms="3256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="TC_02()[pri:0, instance:loginTests.TC_02_ValidateLogin@46292372]" started-at="2024-09-03T10:33:25Z" name="TC_02" finished-at="2024-09-03T10:33:29Z" duration-ms="3205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:loginTests.TC_02_ValidateLogin@46292372]" started-at="2024-09-03T10:33:29Z" name="closeDriver" finished-at="2024-09-03T10:33:29Z" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- loginTests.TC_02_ValidateLogin -->
+    </test> <!-- TC_02 -->
+    <test started-at="2024-09-03T16:33:22Z" name="TC_04" finished-at="2024-09-03T16:33:30Z" duration-ms="7477">
+      <class name="loginTests.TC_04_ErrorMessageBlankEmail">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:loginTests.TC_04_ErrorMessageBlankEmail@111610e6]" started-at="2024-09-03T10:33:22Z" name="startWebDriver" finished-at="2024-09-03T10:33:25Z" duration-ms="2889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="TC_04()[pri:0, instance:loginTests.TC_04_ErrorMessageBlankEmail@111610e6]" started-at="2024-09-03T10:33:25Z" name="TC_04" finished-at="2024-09-03T10:33:27Z" duration-ms="2058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:loginTests.TC_04_ErrorMessageBlankEmail@111610e6]" started-at="2024-09-03T10:33:27Z" name="closeDriver" finished-at="2024-09-03T10:33:30Z" duration-ms="2521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- loginTests.TC_04_ErrorMessageBlankEmail -->
+    </test> <!-- TC_04 -->
+    <test started-at="2024-09-03T16:33:22Z" name="TC_01" finished-at="2024-09-03T16:33:30Z" duration-ms="7617">
+      <class name="loginTests.TC_01_ValidateUI">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:loginTests.TC_01_ValidateUI@52d10fb8]" started-at="2024-09-03T10:33:22Z" name="startWebDriver" finished-at="2024-09-03T10:33:25Z" duration-ms="2670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="TC_01()[pri:0, instance:loginTests.TC_01_ValidateUI@52d10fb8]" started-at="2024-09-03T10:33:25Z" name="TC_01" finished-at="2024-09-03T10:33:26Z" duration-ms="1131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:loginTests.TC_01_ValidateUI@52d10fb8]" started-at="2024-09-03T10:33:26Z" name="closeDriver" finished-at="2024-09-03T10:33:30Z" duration-ms="3807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- loginTests.TC_01_ValidateUI -->
+    </test> <!-- TC_01 -->
+    <test started-at="2024-09-03T16:33:22Z" name="TC_03" finished-at="2024-09-03T16:33:30Z" duration-ms="7902">
+      <class name="loginTests.TC_03_ValidateForgotPassword">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:loginTests.TC_03_ValidateForgotPassword@2a3a299]" started-at="2024-09-03T10:33:22Z" name="startWebDriver" finished-at="2024-09-03T10:33:25Z" duration-ms="2637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="TC_03()[pri:0, instance:loginTests.TC_03_ValidateForgotPassword@2a3a299]" started-at="2024-09-03T10:33:25Z" name="TC_03" finished-at="2024-09-03T10:33:27Z" duration-ms="2495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:loginTests.TC_03_ValidateForgotPassword@2a3a299]" started-at="2024-09-03T10:33:27Z" name="closeDriver" finished-at="2024-09-03T10:33:30Z" duration-ms="2733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- loginTests.TC_03_ValidateForgotPassword -->
+    </test> <!-- TC_03 -->
+    <test started-at="2024-09-03T16:33:29Z" name="TC_05" finished-at="2024-09-03T16:33:35Z" duration-ms="5880">
+      <class name="loginTests.TC_05_ErrorMessageBlankPassword">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:loginTests.TC_05_ErrorMessageBlankPassword@6eafb10e]" started-at="2024-09-03T10:33:29Z" name="startWebDriver" finished-at="2024-09-03T10:33:32Z" duration-ms="2429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="TC_05()[pri:0, instance:loginTests.TC_05_ErrorMessageBlankPassword@6eafb10e]" started-at="2024-09-03T10:33:32Z" name="TC_05" finished-at="2024-09-03T10:33:34Z" duration-ms="2162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:loginTests.TC_05_ErrorMessageBlankPassword@6eafb10e]" started-at="2024-09-03T10:33:34Z" name="closeDriver" finished-at="2024-09-03T10:33:35Z" duration-ms="1284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- loginTests.TC_05_ErrorMessageBlankPassword -->
+    </test> <!-- TC_05 -->
+    <test started-at="2024-09-03T16:33:30Z" name="TC_06" finished-at="2024-09-03T16:33:35Z" duration-ms="5591">
+      <class name="loginTests.TC_06_InvalidEmailAndPassword">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:loginTests.TC_06_InvalidEmailAndPassword@6ad6fa53]" started-at="2024-09-03T10:33:30Z" name="startWebDriver" finished-at="2024-09-03T10:33:32Z" duration-ms="2316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="TC_06()[pri:0, instance:loginTests.TC_06_InvalidEmailAndPassword@6ad6fa53]" started-at="2024-09-03T10:33:32Z" name="TC_06" finished-at="2024-09-03T10:33:34Z" duration-ms="2432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_06 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:loginTests.TC_06_InvalidEmailAndPassword@6ad6fa53]" started-at="2024-09-03T10:33:34Z" name="closeDriver" finished-at="2024-09-03T10:33:35Z" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- loginTests.TC_06_InvalidEmailAndPassword -->
+    </test> <!-- TC_06 -->
+    <test started-at="2024-09-03T16:33:30Z" name="TC_08" finished-at="2024-09-03T16:33:35Z" duration-ms="5228">
+      <class name="loginTests.TC_08_ValidateEyeBtn">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:loginTests.TC_08_ValidateEyeBtn@173373b4]" started-at="2024-09-03T10:33:30Z" name="startWebDriver" finished-at="2024-09-03T10:33:33Z" duration-ms="3098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="TC_08()[pri:0, instance:loginTests.TC_08_ValidateEyeBtn@173373b4]" started-at="2024-09-03T10:33:33Z" name="TC_08" finished-at="2024-09-03T10:33:34Z" duration-ms="620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_08 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:loginTests.TC_08_ValidateEyeBtn@173373b4]" started-at="2024-09-03T10:33:34Z" name="closeDriver" finished-at="2024-09-03T10:33:35Z" duration-ms="1508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- loginTests.TC_08_ValidateEyeBtn -->
+    </test> <!-- TC_08 -->
+    <test started-at="2024-09-03T16:33:30Z" name="TC_07" finished-at="2024-09-03T16:33:36Z" duration-ms="6484">
+      <class name="loginTests.TC_07_ValidateRememberMeCheckbox">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:loginTests.TC_07_ValidateRememberMeCheckbox@57fae983]" started-at="2024-09-03T10:33:30Z" name="startWebDriver" finished-at="2024-09-03T10:33:32Z" duration-ms="2398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="TC_07()[pri:0, instance:loginTests.TC_07_ValidateRememberMeCheckbox@57fae983]" started-at="2024-09-03T10:33:32Z" name="TC_07" finished-at="2024-09-03T10:33:36Z" duration-ms="3652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_07 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:loginTests.TC_07_ValidateRememberMeCheckbox@57fae983]" started-at="2024-09-03T10:33:36Z" name="closeDriver" finished-at="2024-09-03T10:33:36Z" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- loginTests.TC_07_ValidateRememberMeCheckbox -->
+    </test> <!-- TC_07 -->
+  </suite> <!-- RegressionAutomatedQA -->
+</testng-results>

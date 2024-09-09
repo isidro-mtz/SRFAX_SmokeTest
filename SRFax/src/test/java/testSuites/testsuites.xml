@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionAutomatedQA" parallel="tests" thread-count="4">
+
+	<test name="TC_01">
+		<classes>
+			<class name="loginTests.TC_01_ValidateUI" />
+		</classes>
+	</test><!--
+	Test -->
+
+	<test name="TC_02">
+		<classes>
+			<class name="loginTests.TC_02_ValidateLogin" />
+		</classes>
+	</test><!--
+	Test -->
+
+	<test name="TC_03">
+		<classes>
+			<class name="loginTests.TC_03_ValidateForgotPassword" />
+		</classes>
+	</test><!--
+	Test -->
+
+	<test name="TC_04">
+		<classes>
+			<class name="loginTests.TC_04_ErrorMessageBlankEmail" />
+		</classes>
+	</test><!--
+	Test -->
+
+	<test name="TC_05">
+		<classes>
+			<class name="loginTests.TC_05_ErrorMessageBlankPassword" />
+		</classes>
+	</test><!--
+	Test -->
+
+	<test name="TC_06">
+		<classes>
+			<class name="loginTests.TC_06_InvalidEmailAndPassword" />
+		</classes>
+	</test><!--
+	Test -->
+
+	<test name="TC_07">
+		<classes>
+			<class name="loginTests.TC_07_ValidateRememberMeCheckbox" />
+		</classes>
+	</test><!--
+	Test -->
+	
+	<test name="TC_08">
+		<classes>
+			<class name="loginTests.TC_08_ValidateEyeBtn" />
+		</classes>
+	</test><!--
+	Test -->
+
+
+</suite><!--
+Suite -->
+
+

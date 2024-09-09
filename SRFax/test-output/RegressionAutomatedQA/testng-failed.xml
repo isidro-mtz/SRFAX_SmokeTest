@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [RegressionAutomatedQA]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="TC_04(failed)">
+    <classes>
+      <class name="loginTests.TC_01_ValidateUI">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_01_ValidateUI -->
+      <class name="loginTests.TC_08_ValidateEyeBtn">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_08_ValidateEyeBtn -->
+      <class name="loginTests.TC_03_ValidateForgotPassword">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_03_ValidateForgotPassword -->
+      <class name="loginTests.TC_06_InvalidEmailAndPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_06_InvalidEmailAndPassword -->
+      <class name="loginTests.TC_02_ValidateLogin">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_02_ValidateLogin -->
+      <class name="loginTests.TC_05_ErrorMessageBlankPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_05_ErrorMessageBlankPassword -->
+      <class name="loginTests.TC_04_ErrorMessageBlankEmail">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+          <include name="TC_04"/>
+        </methods>
+      </class> <!-- loginTests.TC_04_ErrorMessageBlankEmail -->
+      <class name="loginTests.TC_07_ValidateRememberMeCheckbox">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_07_ValidateRememberMeCheckbox -->
+    </classes>
+  </test> <!-- TC_04(failed) -->
+  <test parallel="tests" name="TC_05(failed)">
+    <classes>
+      <class name="loginTests.TC_01_ValidateUI">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_01_ValidateUI -->
+      <class name="loginTests.TC_08_ValidateEyeBtn">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_08_ValidateEyeBtn -->
+      <class name="loginTests.TC_03_ValidateForgotPassword">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_03_ValidateForgotPassword -->
+      <class name="loginTests.TC_06_InvalidEmailAndPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_06_InvalidEmailAndPassword -->
+      <class name="loginTests.TC_05_ErrorMessageBlankPassword">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="TC_05"/>
+        </methods>
+      </class> <!-- loginTests.TC_05_ErrorMessageBlankPassword -->
+      <class name="loginTests.TC_02_ValidateLogin">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_02_ValidateLogin -->
+      <class name="loginTests.TC_04_ErrorMessageBlankEmail">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_04_ErrorMessageBlankEmail -->
+      <class name="loginTests.TC_07_ValidateRememberMeCheckbox">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_07_ValidateRememberMeCheckbox -->
+    </classes>
+  </test> <!-- TC_05(failed) -->
+  <test parallel="tests" name="TC_06(failed)">
+    <classes>
+      <class name="loginTests.TC_01_ValidateUI">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_01_ValidateUI -->
+      <class name="loginTests.TC_08_ValidateEyeBtn">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_08_ValidateEyeBtn -->
+      <class name="loginTests.TC_03_ValidateForgotPassword">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_03_ValidateForgotPassword -->
+      <class name="loginTests.TC_06_InvalidEmailAndPassword">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="TC_06"/>
+        </methods>
+      </class> <!-- loginTests.TC_06_InvalidEmailAndPassword -->
+      <class name="loginTests.TC_02_ValidateLogin">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_02_ValidateLogin -->
+      <class name="loginTests.TC_05_ErrorMessageBlankPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_05_ErrorMessageBlankPassword -->
+      <class name="loginTests.TC_04_ErrorMessageBlankEmail">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_04_ErrorMessageBlankEmail -->
+      <class name="loginTests.TC_07_ValidateRememberMeCheckbox">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_07_ValidateRememberMeCheckbox -->
+    </classes>
+  </test> <!-- TC_06(failed) -->
+  <test parallel="tests" name="TC_07(failed)">
+    <classes>
+      <class name="loginTests.TC_01_ValidateUI">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_01_ValidateUI -->
+      <class name="loginTests.TC_08_ValidateEyeBtn">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_08_ValidateEyeBtn -->
+      <class name="loginTests.TC_03_ValidateForgotPassword">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_03_ValidateForgotPassword -->
+      <class name="loginTests.TC_06_InvalidEmailAndPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_06_InvalidEmailAndPassword -->
+      <class name="loginTests.TC_02_ValidateLogin">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_02_ValidateLogin -->
+      <class name="loginTests.TC_05_ErrorMessageBlankPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_05_ErrorMessageBlankPassword -->
+      <class name="loginTests.TC_04_ErrorMessageBlankEmail">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_04_ErrorMessageBlankEmail -->
+      <class name="loginTests.TC_07_ValidateRememberMeCheckbox">
+        <methods>
+          <include name="TC_07"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_07_ValidateRememberMeCheckbox -->
+    </classes>
+  </test> <!-- TC_07(failed) -->
+  <test parallel="tests" name="TC_08(failed)">
+    <classes>
+      <class name="loginTests.TC_01_ValidateUI">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_01_ValidateUI -->
+      <class name="loginTests.TC_08_ValidateEyeBtn">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="TC_08"/>
+        </methods>
+      </class> <!-- loginTests.TC_08_ValidateEyeBtn -->
+      <class name="loginTests.TC_03_ValidateForgotPassword">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_03_ValidateForgotPassword -->
+      <class name="loginTests.TC_06_InvalidEmailAndPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_06_InvalidEmailAndPassword -->
+      <class name="loginTests.TC_02_ValidateLogin">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_02_ValidateLogin -->
+      <class name="loginTests.TC_05_ErrorMessageBlankPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_05_ErrorMessageBlankPassword -->
+      <class name="loginTests.TC_04_ErrorMessageBlankEmail">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_04_ErrorMessageBlankEmail -->
+      <class name="loginTests.TC_07_ValidateRememberMeCheckbox">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_07_ValidateRememberMeCheckbox -->
+    </classes>
+  </test> <!-- TC_08(failed) -->
+  <test parallel="tests" name="TC_03(failed)">
+    <classes>
+      <class name="loginTests.TC_01_ValidateUI">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_01_ValidateUI -->
+      <class name="loginTests.TC_03_ValidateForgotPassword">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+          <include name="TC_03"/>
+        </methods>
+      </class> <!-- loginTests.TC_03_ValidateForgotPassword -->
+      <class name="loginTests.TC_08_ValidateEyeBtn">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_08_ValidateEyeBtn -->
+      <class name="loginTests.TC_06_InvalidEmailAndPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_06_InvalidEmailAndPassword -->
+      <class name="loginTests.TC_02_ValidateLogin">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_02_ValidateLogin -->
+      <class name="loginTests.TC_05_ErrorMessageBlankPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_05_ErrorMessageBlankPassword -->
+      <class name="loginTests.TC_04_ErrorMessageBlankEmail">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_04_ErrorMessageBlankEmail -->
+      <class name="loginTests.TC_07_ValidateRememberMeCheckbox">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_07_ValidateRememberMeCheckbox -->
+    </classes>
+  </test> <!-- TC_03(failed) -->
+  <test parallel="tests" name="TC_02(failed)">
+    <classes>
+      <class name="loginTests.TC_01_ValidateUI">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_01_ValidateUI -->
+      <class name="loginTests.TC_08_ValidateEyeBtn">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_08_ValidateEyeBtn -->
+      <class name="loginTests.TC_03_ValidateForgotPassword">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_03_ValidateForgotPassword -->
+      <class name="loginTests.TC_06_InvalidEmailAndPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_06_InvalidEmailAndPassword -->
+      <class name="loginTests.TC_02_ValidateLogin">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+          <include name="TC_02"/>
+        </methods>
+      </class> <!-- loginTests.TC_02_ValidateLogin -->
+      <class name="loginTests.TC_05_ErrorMessageBlankPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_05_ErrorMessageBlankPassword -->
+      <class name="loginTests.TC_04_ErrorMessageBlankEmail">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_04_ErrorMessageBlankEmail -->
+      <class name="loginTests.TC_07_ValidateRememberMeCheckbox">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_07_ValidateRememberMeCheckbox -->
+    </classes>
+  </test> <!-- TC_02(failed) -->
+  <test parallel="tests" name="TC_01(failed)">
+    <classes>
+      <class name="loginTests.TC_01_ValidateUI">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="TC_01"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_01_ValidateUI -->
+      <class name="loginTests.TC_08_ValidateEyeBtn">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_08_ValidateEyeBtn -->
+      <class name="loginTests.TC_03_ValidateForgotPassword">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_03_ValidateForgotPassword -->
+      <class name="loginTests.TC_06_InvalidEmailAndPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_06_InvalidEmailAndPassword -->
+      <class name="loginTests.TC_02_ValidateLogin">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_02_ValidateLogin -->
+      <class name="loginTests.TC_05_ErrorMessageBlankPassword">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_05_ErrorMessageBlankPassword -->
+      <class name="loginTests.TC_04_ErrorMessageBlankEmail">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_04_ErrorMessageBlankEmail -->
+      <class name="loginTests.TC_07_ValidateRememberMeCheckbox">
+        <methods>
+          <include name="startWebDriver"/>
+        </methods>
+      </class> <!-- loginTests.TC_07_ValidateRememberMeCheckbox -->
+    </classes>
+  </test> <!-- TC_01(failed) -->
+</suite> <!-- Failed suite [RegressionAutomatedQA] -->
