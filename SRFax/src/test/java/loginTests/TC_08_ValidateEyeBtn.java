@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import commonMethods.GlobalVariables;
 import commonMethods.WrapClass;
-import pageObjects.AccountMainPage;
+import pageObjects.AccountSummaryPage;
 import pageObjects.LoginPage;
 import setupDriver.DriverSetup;
 
@@ -19,7 +19,7 @@ public class TC_08_ValidateEyeBtn {
 
 	// Inicializar page objects y metodos
 	LoginPage loginPage = new LoginPage(driver);
-	AccountMainPage accountPage = new AccountMainPage(driver);
+	AccountSummaryPage accountPage = new AccountSummaryPage(driver);
 
 	@BeforeTest
 	public void startWebDriver() {

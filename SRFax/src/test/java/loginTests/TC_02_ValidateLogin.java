@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import commonMethods.GlobalVariables;
 import commonMethods.WrapClass;
-import pageObjects.AccountMainPage;
+import pageObjects.AccountSummaryPage;
 import pageObjects.LoginPage;
 import setupDriver.DriverSetup;
 
@@ -24,7 +24,7 @@ public class TC_02_ValidateLogin {
 
 	// Inicializar page objects y metodos
 	LoginPage loginPage = new LoginPage(driver);
-	AccountMainPage accountMain = new AccountMainPage(driver);
+	AccountSummaryPage accountMain = new AccountSummaryPage(driver);
 	
 	@BeforeTest
 	public void startWebDriver() {

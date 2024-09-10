@@ -2,18 +2,25 @@ package commonMethods;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WrapClass {
+	
 	
 	public static void click(WebElement webElement) {
 		webElement.click();
 	}
+	
+	
 	
 	public static void sendKeys(WebElement webElement, String textToSend) {
 		webElement.sendKeys(textToSend);
@@ -39,5 +46,15 @@ public class WrapClass {
 		}
 		
 	}
+	
+	// Nuevo método para esperar a que un elemento sea clickeable
+    public static WebElement waitForElementToBeClickable(WebDriver driver, WebElement element, int timeoutInSeconds) {
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+	
+	
+	
+	
 
 }
