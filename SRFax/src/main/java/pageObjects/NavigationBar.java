@@ -1,9 +1,15 @@
 package pageObjects;
 
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import commonMethods.WrapClass;
 
@@ -22,7 +28,7 @@ public class NavigationBar {
 	
 	@FindBy(xpath = "//a[@href='#Faxes']")
 	private WebElement faxesBtn;
-	@FindBy(xpath = "//a[@href='sendFax.php']")
+	@FindBy(xpath = "//div[not(@id='mobile-wrap')]//a[@href='sendFax.php']")
 	private WebElement sendAFaxBtn;
 	@FindBy(xpath = "//a[@href='faxesReceived.php']")
 	private WebElement faxesReceivedBtn;
@@ -55,18 +61,26 @@ public class NavigationBar {
 	
 	public void faxes() {
 		WrapClass.click(faxesBtn);
+		WrapClass.reinitializeElement(driver, By.xpath("//a[@href='sendFax.php']"), 10);
 	}
 	
 	public void sendAFax() {
-	    if (driver == null) {
-	        throw new RuntimeException("WebDriver is not initialized");
+		WrapClass.click(faxesBtn);
+		
+		PageFactory.initElements(driver, this);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));  // 10 seconds wait time
+		
+		try {
+	        wait.until(ExpectedConditions.visibilityOf(sendAFaxBtn));
+	        System.out.println("Element is displayed");
+
+	        // Click the button after it is visible
+	        WrapClass.click(sendAFaxBtn);
+	    } catch (TimeoutException e) {
+	        System.out.println("Element not displayed");
 	    }
-	    System.out.println("Attempting to wait for sendAFaxBtn to be clickable.");
-	    WebElement element = WrapClass.waitForElementToBeClickable(driver, sendAFaxBtn, 10);
-	    if (element == null) {
-	        throw new RuntimeException("Failed to locate the sendAFaxBtn element");
-	    }
-	    WrapClass.click(element);
+		
+	    WrapClass.click(sendAFaxBtn);
 	}
 	
 	public void faxesReceived() {

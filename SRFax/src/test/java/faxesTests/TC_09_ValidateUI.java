@@ -33,7 +33,7 @@ public class TC_09_ValidateUI {
 	@Test
 	public void TC_09() {
 		loginPage.login(GlobalVariables.STANDARD_USER, GlobalVariables.ALL_USER_PWD);
-		navigationBar.faxes();
+		//navigationBar.faxes();
 		navigationBar.sendAFax();
 		Assert.assertTrue(sendAFaxPage.verifySenderField());
 		Assert.assertTrue(sendAFaxPage.verifyTypeOfFax());

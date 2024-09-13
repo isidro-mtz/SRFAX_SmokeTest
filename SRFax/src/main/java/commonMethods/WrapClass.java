@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WrapClass {
@@ -20,7 +21,19 @@ public class WrapClass {
 		webElement.click();
 	}
 	
-	
+	public static WebElement reinitializeElement (WebDriver driver, By locator, int timeoutInSeconds) {
+		try {
+			// Create an instance of WebDriverWait
+	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+			//Wait element to be visible
+			wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+			// Wait for the element to be clickable and return it
+			return wait.until(ExpectedConditions.elementToBeClickable(locator));
+		}catch(Exception e) {
+			System.out.println("Element could not be reinitialized: " + e.getMessage());
+            return null;  
+		}
+	}
 	
 	public static void sendKeys(WebElement webElement, String textToSend) {
 		webElement.sendKeys(textToSend);
@@ -48,10 +61,10 @@ public class WrapClass {
 	}
 	
 	// Nuevo método para esperar a que un elemento sea clickeable
-    public static WebElement waitForElementToBeClickable(WebDriver driver, WebElement element, int timeoutInSeconds) {
-    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
-        return wait.until(ExpectedConditions.elementToBeClickable(element));
-    }
+	public static WebElement waitForElementToBeClickable(WebDriver driver, By locator, int timeoutInSeconds) {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+	    return wait.until(ExpectedConditions.elementToBeClickable(locator));
+	}
 	
 	
 	
