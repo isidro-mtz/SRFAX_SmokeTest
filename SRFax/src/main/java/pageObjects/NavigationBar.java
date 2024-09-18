@@ -28,7 +28,7 @@ public class NavigationBar {
 	
 	@FindBy(xpath = "//a[@href='#Faxes']")
 	private WebElement faxesBtn;
-	@FindBy(xpath = "//div[not(@id='mobile-wrap')]//a[@href='sendFax.php']")
+	@FindBy(xpath = "//div[@id='Faxes']//a[@href='sendFax.php']")
 	private WebElement sendAFaxBtn;
 	@FindBy(xpath = "//a[@href='faxesReceived.php']")
 	private WebElement faxesReceivedBtn;
