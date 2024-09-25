@@ -15,27 +15,27 @@ public class SendAFaxPage {
 	// WebElements
 	@FindBy(name = "sender")
 	private WebElement senderFld;
-	@FindBy(xpath = "//*[@value='single']")
+	@FindBy(xpath = "/html/body/div[1]/div/div/main/div[2]/form/div/div/div[1]/div[2]/div[2]/label[1]")
 	private WebElement singleFaxRadioBtn;
-	@FindBy(xpath = "//*[@value='broadcast']")
+	@FindBy(xpath = "/html/body/div[1]/div/div/main/div[2]/form/div/div/div[1]/div[2]/div[2]/label[2]")
 	private WebElement broadcastFaxRadioBtn;
 	@FindBy(id = "faxNumber")
 	private WebElement enterDestinationFaxFld;
 	@FindBy(id = "addressBookSingle")
 	private WebElement addressBookBtn;
-	@FindBy(name = "addToAddressBook")
+	@FindBy(xpath = "/html/body/div[1]/div/div/main/div[2]/form/div/div/div[1]/div[3]/div[2]/span[1]/label/div")
 	private WebElement saveToAddressBookChkBox;
 	@FindBy(name = "reference")
 	private WebElement referenceFld;
 	@FindBy(name = "retries")
 	private WebElement retriesFld;
-	@FindBy(id = "addCoverPage")
+	@FindBy(xpath = "/html/body/div[1]/div/div/main/div[2]/form/div/div/div[1]/div[6]/div[2]/label/div")
 	private WebElement includeCoverPageChkBox;
-	@FindBy(id = "previewCheck")
+	@FindBy(xpath = "/html/body/div[1]/div/div/main/div[2]/form/div/div/div[1]/div[8]/div[2]/label/div")
 	private WebElement previewFaxChkBox;
-	@FindBy(id = "schedule")
+	@FindBy(xpath = "/html/body/div[1]/div/div/main/div[2]/form/div/div/div[1]/div[9]/div[2]/label/div")
 	private WebElement scheduleChxBox;
-	@FindBy(name = "qqfile")
+	@FindBy(xpath = "/html/body/div[1]/div/div/main/div[2]/form/div/div/div[2]/div[3]/div/div/div[1]")
 	private WebElement selectFileBtn;
 	@FindBy(id = "sendFaxSubmit")
 	private WebElement sendFaxBtn;
@@ -50,49 +50,32 @@ public class SendAFaxPage {
 		WrapClass.click(sendFaxBtn);
 	}
 
-	public boolean verifySenderField() {
-		return WrapClass.verifyElementDisplayed(senderFld);
-	}
-
-	public boolean verifyTypeOfFax() {
-		if (WrapClass.verifyElementDisplayed(singleFaxRadioBtn)
-				&& WrapClass.verifyElementDisplayed(broadcastFaxRadioBtn)) {
-			return true;
-		}
-		return false;
-	}
-	
-	public boolean verifyEnterDestination() {
-		return WrapClass.verifyElementDisplayed(enterDestinationFaxFld);
-	}
-	
-	public boolean verifyAddToAddressBook() {
-		return WrapClass.verifyElementDisplayed(addressBookBtn);
-	}
-	
-	public boolean verifyReference() {
-		return WrapClass.verifyElementDisplayed(referenceFld);
-	}
-	
-	public boolean verifyRetries() {
-		return WrapClass.verifyElementDisplayed(retriesFld);
-	}
-	
-	public boolean verifyIncludeCoverPage() {
-		return WrapClass.verifyElementDisplayed(includeCoverPageChkBox);
-	}
-	
-	public boolean verifyScheduleFax() {
-		return WrapClass.verifyElementDisplayed(scheduleChxBox);
-	}
-	
-	public boolean verifyAttachmentSection() {
-		return WrapClass.verifyElementDisplayed(selectFileBtn);
-	}
-	
-	public boolean verifySendFaxBtn() {
+	public boolean verifySingleElement() {
 		return WrapClass.verifyElementDisplayed(sendFaxBtn);
 	}
-	
+
+	public boolean verifySendAFaxUI() {
+		if (WrapClass.verifyElementDisplayed(senderFld) && 
+			WrapClass.verifyElementDisplayed(singleFaxRadioBtn) &&
+			WrapClass.verifyElementDisplayed(broadcastFaxRadioBtn) &&
+			WrapClass.verifyElementDisplayed(enterDestinationFaxFld) &&
+			WrapClass.verifyElementDisplayed(enterDestinationFaxFld) &&
+			WrapClass.verifyElementDisplayed(saveToAddressBookChkBox) &&
+			WrapClass.verifyElementDisplayed(referenceFld) &&
+			WrapClass.verifyElementDisplayed(retriesFld) &&
+			WrapClass.verifyElementDisplayed(includeCoverPageChkBox) &&
+			WrapClass.verifyElementDisplayed(previewFaxChkBox) &&
+			WrapClass.verifyElementDisplayed(scheduleChxBox) &&
+			WrapClass.verifyElementDisplayed(selectFileBtn) &&
+			WrapClass.verifyElementDisplayed(sendFaxBtn)
+			) {
+			
+			return true;
+
+		}else {
+			System.out.println("Element not found");
+			return false;
+		}
+	}
 
 }

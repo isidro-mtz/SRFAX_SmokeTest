@@ -72,7 +72,7 @@ public class NavigationBar {
 		
 		try {
 	        wait.until(ExpectedConditions.visibilityOf(sendAFaxBtn));
-	        System.out.println("Element is displayed");
+	        //System.out.println("Element is displayed");
 
 	        // Click the button after it is visible
 	        WrapClass.click(sendAFaxBtn);

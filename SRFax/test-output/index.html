@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\isidro.peralta\AppData\Local\Temp\testng-eclipse-128483944\testng-customsuite.xml</span>
+                    <span>C:\Users\isidro.peralta\AppData\Local\Temp\testng-eclipse--553019445\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="faxesTests.TC_09_ValidateUI" class="method navigator-link" hash-for-method="TC_09">TC_09</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="faxesTests.TC_10_SendFax" class="method navigator-link" hash-for-method="TC_10">TC_10</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,20 +120,41 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">faxesTests.TC_09_ValidateUI</span>
+              <span class="class-name">faxesTests.TC_10_SendFax</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_09">
-                  </a> <!-- TC_09 -->
-                  <span class="method-name">TC_09</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at faxesTests.TC_09_ValidateUI.TC_09(TC_09_ValidateUI.java:39)
+                  <a name="TC_10">
+                  </a> <!-- TC_10 -->
+                  <span class="method-name">TC_10</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d82cc967d036e4c6b33aff30c43b0aae, sendKeysToElement {value=[Ljava.lang.CharSequence;@7b22ec89, id=f.2F978541E9DDBC17FBA6C368BECE5C20.d.1F2B103E65FD7471ED4E2D4BF3A19DD8.e.216}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\ISIDRO~1.PER\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55327}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55327/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d82cc967d036e4c6b33aff30c43b0aae)] -&gt; xpath: /html/body/div[1]/div/div/main/div[2]/form/div/div/div[2]/div[3]/div/div/div[1]]
+Session ID: d82cc967d036e4c6b33aff30c43b0aae
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+	at pageObjects.SendAFaxPage.sendSingleFaxNoCoverPage(SendAFaxPage.java:49)
+	at faxesTests.TC_10_SendFax.TC_10(TC_10_SendFax.java:37)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
@@ -166,7 +187,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\isidro.peralta\AppData\Local\Temp\testng-eclipse-128483944\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\isidro.peralta\AppData\Local\Temp\testng-eclipse--553019445\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -175,7 +196,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;faxesTests.TC_09_ValidateUI&quot;/&gt;
+      &lt;class name=&quot;faxesTests.TC_10_SendFax&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -217,9 +238,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_09')
-data.setCell(0, 2, 'faxesTests.TC_09_ValidateUI')
-data.setCell(0, 3, 5624);
+data.setCell(0, 1, 'TC_10')
+data.setCell(0, 2, 'faxesTests.TC_10_SendFax')
+data.setCell(0, 3, 5063);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -250,7 +271,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">faxesTests.TC_09_ValidateUI</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">faxesTests.TC_10_SendFax</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startWebDriver</span>
                 <span class="method-start">0 ms</span>
@@ -258,12 +279,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TC_09</span>
-                <span class="method-start">3023 ms</span>
+                <span class="method-name">TC_10</span>
+                <span class="method-start">2135 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeDriver</span>
-                <span class="method-start">8653 ms</span>
+                <span class="method-start">7209 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -9,4 +9,5 @@ public class GlobalVariables {
 	public static final String INVALID_PSW = "test";
 	public static final String FILE_PATH = "C:/Users/isidro.peralta/Documents/2Page.pdf";
 	public static final String DESTINATION_TEST = "8442846968";
+	public static final String REFERENCE_TEST = "FRR";
 }
